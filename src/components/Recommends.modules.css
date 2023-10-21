@@ -1,0 +1,36 @@
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+  }
+  /* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    /* Estilos para pantallas grandes aquí */
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        justify-content: center;
+      }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        /* grid-template-rows: auto auto auto auto auto; */
+        justify-content: center;
+      }
+  }
+  
