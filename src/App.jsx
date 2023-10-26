@@ -4,6 +4,9 @@ import { CategoryDetail } from "./routes/CategoryDetail";
 import {ProductDetail} from "./routes/ProductDetail";
 import { Home } from "./routes/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { PanelAdmin } from "./routes/PanelAdmin";
+import { ProductList } from "./routes/ProductList";
+import { ProductAdd } from "./routes/ProductAdd";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/categoria" element={<CategoryDetail/>}/>
         <Route path="/producto/:id" element={<ProductDetail/>}/>
+        <Route path="/administracion" element={<PanelAdmin />}/>
+        <Route path="/administracion/listaproductos" element={<ProductList/>}/> 
+        <Route path="/administracion/agregarproducto" element={<ProductAdd/>}/>
       </Routes>
       <Footer />
     </Router>

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../components/ProductBody.modules.css";
+import { Gallery } from "./Gallery";
 
 export function ProductBody({
   titulo,
@@ -13,6 +14,7 @@ export function ProductBody({
     <div className="prod_chars">
       <h3>{titulo}</h3>
       <img src={img_src} alt="" />
+      {/* <Gallery img_src={img_src}/> */}
       <div className="container">
         <h4>Categoría</h4>
         <p>{categoria}</p>
