@@ -1,6 +1,7 @@
 import Logo from "../images/Nota_Segura.png";
 import { Link } from "react-router-dom";
-import "../components/Header.modules.css"
+import "../components/Header.modules.css";
+
 
 export function Header() {
   return (
@@ -12,9 +13,14 @@ export function Header() {
         <p>Aseguramos tu música</p>
       </div>
       <div className="botones">
+        <Link to='/registro'>
         <button>Crear cuenta</button>
-        <button>Iniciar sesion</button>
+        </Link>
+        <Link to= "/login">
+          <button>Iniciar sesion</button>
+        </Link>
       </div>
     </nav>
   );
 }
+
